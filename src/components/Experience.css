@@ -1,0 +1,279 @@
+.experience {
+  padding: 120px 0;
+  background: var(--background-white);
+}
+
+.experience-content {
+  display: grid;
+  gap: 80px;
+}
+
+.experience-timeline {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.experience-timeline::before {
+  content: "";
+  position: absolute;
+  left: 30px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(to bottom, var(--accent-gold), var(--accent-gold-light));
+  border-radius: 2px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.timeline-marker {
+  position: relative;
+  z-index: 2;
+}
+
+.timeline-icon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, var(--accent-gold), var(--accent-gold-light));
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  box-shadow: 0 8px 25px rgba(245, 158, 11, 0.3);
+  border: 4px solid white;
+}
+
+.timeline-content {
+  flex: 1;
+  margin-top: -10px;
+}
+
+.experience-card {
+  background: var(--background-white);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 40px var(--shadow-light);
+  border-left: 4px solid var(--accent-gold);
+  transition: all 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 60px var(--shadow-medium);
+}
+
+.experience-header {
+  margin-bottom: 20px;
+}
+
+.experience-header h3 {
+  color: var(--primary-dark);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-family: "Playfair Display", serif;
+}
+
+.company-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.company {
+  color: var(--accent-gold-dark);
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.period {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-medium);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.period i {
+  color: var(--accent-gold);
+}
+
+.experience-description {
+  color: var(--text-medium);
+  line-height: 1.7;
+  margin-bottom: 25px;
+  font-size: 1.05rem;
+}
+
+.experience-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.highlight-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(245, 158, 11, 0.1);
+  color: var(--accent-gold-dark);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 1px solid rgba(245, 158, 11, 0.2);
+}
+
+.highlight-tag i {
+  font-size: 0.75rem;
+}
+
+.experience-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.stat-card {
+  background: var(--background-light);
+  padding: 50px 30px;
+  border-radius: 20px;
+  text-align: center;
+  border: 2px solid var(--border-light);
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.stat-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(245, 158, 11, 0.1), transparent);
+  transition: left 0.6s;
+}
+
+.stat-card:hover::before {
+  left: 100%;
+}
+
+.stat-card:hover {
+  border-color: var(--accent-gold);
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px var(--shadow-medium);
+  background: white;
+}
+
+.stat-icon {
+  background: linear-gradient(135deg, var(--accent-gold), var(--accent-gold-light));
+  color: white;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  margin: 0 auto 25px;
+  box-shadow: 0 10px 30px rgba(245, 158, 11, 0.3);
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover .stat-icon {
+  transform: scale(1.1);
+  box-shadow: 0 15px 40px rgba(245, 158, 11, 0.4);
+}
+
+.stat-card h3 {
+  font-size: 3rem;
+  color: var(--primary-dark);
+  font-weight: 800;
+  margin-bottom: 15px;
+  line-height: 1;
+}
+
+.stat-card p {
+  color: var(--text-medium);
+  font-weight: 600;
+  font-size: 1.05rem;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .experience {
+    padding: 80px 0;
+  }
+
+  .experience-timeline::before {
+    left: 20px;
+  }
+
+  .timeline-item {
+    gap: 25px;
+    margin-bottom: 40px;
+  }
+
+  .timeline-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  .experience-card {
+    padding: 30px 25px;
+  }
+
+  .experience-header h3 {
+    font-size: 1.3rem;
+  }
+
+  .company-info {
+    gap: 3px;
+  }
+
+  .company {
+    font-size: 1rem;
+  }
+
+  .experience-highlights {
+    gap: 8px;
+  }
+
+  .highlight-tag {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+  }
+
+  .experience-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .stat-card {
+    padding: 40px 20px;
+  }
+
+  .stat-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+  }
+
+  .stat-card h3 {
+    font-size: 2.5rem;
+  }
+}
