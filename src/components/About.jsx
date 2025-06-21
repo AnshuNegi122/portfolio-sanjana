@@ -10,7 +10,7 @@ const About = () => {
               <i className="fas fa-user-tie"></i>
               <span>About Me</span>
             </div>
-            <h2>Sanjana Bisht, Esq.</h2>
+            <h2>Sanjana Bisht</h2>
             <p className="about-intro">
               A dedicated legal professional with comprehensive experience across diverse practice areas including
               corporate law, employment disputes, matrimonial cases, and compliance management. Committed to delivering
