@@ -71,7 +71,7 @@ const Experience = () => {
     },
     {
       icon: "fas fa-users",
-      number: "100+",
+      number: "80+",
       label: "Clients Served",
     },
     {

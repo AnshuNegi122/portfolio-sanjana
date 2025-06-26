@@ -12,15 +12,18 @@ const About = () => {
             </div>
             <h2>Sanjana Bisht</h2>
             <p className="about-intro">
-              A dedicated legal professional with comprehensive experience across diverse practice areas including
-              corporate law, employment disputes, matrimonial cases, and compliance management. Committed to delivering
-              strategic legal solutions while maintaining the highest standards of professional excellence.
+              A results-oriented legal professional with a proven track record in corporate advisory,
+              employment disputes, matrimonial litigation, and regulatory compliance. Legal
+              services are delivered with a strong focus on strategic insight, risk mitigation, and
+              tailored client solutions. The practice is built on the principles of integrity, precision,
+              and discretion—ensuring clients receive reliable, actionable, and outcome-driven
+              legal support.
             </p>
             <p>
-              My approach combines thorough legal research with practical problem-solving skills, ensuring clients
-              receive well-informed counsel tailored to their specific needs. I believe in building strong client
-              relationships through clear communication, strategic thinking, and unwavering dedication to achieving
-              favorable outcomes.
+              By integrating thorough legal research with practical problem-solving, the approach
+              remains aligned with evolving client needs and legal landscapes. Every matter is
+              handled with clear communication, professional diligence, and a commitment to
+              securing the most effective resolution.
             </p>
 
             <div className="qualifications">
@@ -43,7 +46,7 @@ const About = () => {
                 </li>
                 <li>
                   <i className="fas fa-shield-alt"></i>
-                  POSH (Prevention of Sexual Harassment) Certified Investigator
+                  POSH (Prevention of Sexual Harassment) Trainer
                 </li>
                 <li>
                   <i className="fas fa-briefcase"></i>

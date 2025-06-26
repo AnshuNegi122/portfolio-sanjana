@@ -31,7 +31,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 80px;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .hero-badge {
@@ -40,11 +40,11 @@
   gap: 10px;
   background: linear-gradient(135deg, var(--accent-gold), var(--accent-gold-light));
   color: white;
-  padding: 12px 24px;
+  padding: 10px 22px;
   border-radius: 50px;
   font-size: 0.9rem;
   font-weight: 600;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);
 }
 
@@ -58,7 +58,7 @@
 }
 
 .hero-subtitle {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   color: var(--text-medium);
   margin-bottom: 50px;
   line-height: 1.7;
@@ -121,6 +121,8 @@
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 25px 50px var(--shadow-dark);
+  margin-top: 5rem;
+  margin-left: 1rem;
 }
 
 .image-container img {

@@ -58,9 +58,8 @@ const Contact = () => {
               <div>
                 <h4>Office Address</h4>
                 <p>
-                  123 Legal Plaza, Suite 500
-                  <br />
-                  Downtown District, NY 10001
+                  Hall no 6, Near Court no 8, District & Sessions
+                  Court, Gurgaon, HR 122001
                 </p>
               </div>
             </div>

@@ -109,6 +109,11 @@ const Footer = () => {
                 Downtown District, NY 10001
               </p>
               <p>
+                <i className="fas fa-map-marker-alt"></i>
+                Hall no 6, Near Court no 8, District & Sessions
+                Court, Gurgaon, HR 122001
+              </p>
+              <p>
                 <i className="fas fa-phone"></i>
                 (555) 123-4567
               </p>

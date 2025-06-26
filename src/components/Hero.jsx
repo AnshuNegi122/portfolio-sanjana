@@ -24,9 +24,12 @@ const Hero = () => {
             </div>
             <h1>Strategic Legal Solutions You Can Trust</h1>
             <p className="hero-subtitle">
-              Dedicated legal professional with comprehensive experience in corporate law, employment disputes,
-              matrimonial cases, and compliance management. Committed to delivering strategic solutions with proven
-              results.
+              A results-driven legal professional offering trusted expertise across
+              criminal, civil, and corporate law. Known for a strategic and
+              pragmatic approach to complex legal matters, delivering tailored
+              solutions that align with client objectives. With a focus on
+              integrity, precision, and outcome-oriented advocacy, committed to
+              providing clear, compliant, and effective legal support.
             </p>
             <div className="hero-stats">
               <div className="stat">
