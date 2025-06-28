@@ -1,6 +1,6 @@
 .about {
   padding: 120px 0;
-  background: var(--background-white);
+  background: var(--background-color);
 }
 
 .about-content {
@@ -14,62 +14,64 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: linear-gradient(135deg, var(--accent-gold), var(--accent-gold-light));
-  color: white;
-  padding: 6px 18px;
+  background: linear-gradient(135deg, var(--secondary-color), var(--accent-light));
+  color: var(--background-color);
+  padding: 10px 24px;
   border-radius: 50px;
   font-size: 0.9rem;
   font-weight: 600;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  box-shadow: 0 4px 15px var(--shadow-light);
+  border: 1px solid var(--accent-color);
 }
 
 .about-text h2 {
   font-family: "Playfair Display", serif;
-  font-size: 3rem;
-  color: var(--primary-dark);
+  font-size: 3.2rem;
+  color: var(--text-color);
   margin-bottom: 25px;
   font-weight: 700;
   line-height: 1.2;
 }
 
 .about-intro {
-  font-size: 1.3rem;
-  color: var(--accent-gold-dark);
+  font-size: 1.35rem;
+  color: var(--accent-color);
   font-weight: 600;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   line-height: 1.6;
 }
 
 .about-text p {
-  font-size: 1.004rem;
-  color: var(--text-medium);
-  margin-bottom: 20px;
-  line-height: 1.6;
+  font-size: 1.15rem;
+  color: var(--text-light);
+  margin-bottom: 25px;
+  line-height: 1.8;
 }
 
 .qualifications {
-  margin: 30px 0;
-  background: var(--background-light);
-  padding: 25px 40px;
+  margin: 50px 0;
+  background: var(--primary-color);
+  padding: 45px;
   border-radius: 15px;
-  border-left: 5px solid var(--accent-gold);
+  border-left: 5px solid var(--accent-color);
 }
 
 .qualifications h3 {
   display: flex;
   align-items: center;
   gap: 12px;
-  color: var(--primary-dark);
-  font-size: 1.4rem;
-  margin-bottom: 10px;
+  color: var(--text-color);
+  font-size: 1.6rem;
+  margin-bottom: 25px;
   font-weight: 700;
 }
 
 .qualifications h3 i {
-  color: var(--accent-gold);
-  font-size: 1.3rem;
+  color: var(--accent-color);
+  font-size: 1.4rem;
 }
 
 .qualifications ul {
@@ -81,9 +83,9 @@
   display: flex;
   align-items: center;
   gap: 15px;
-  padding: 12px 5px;
+  padding: 14px 0;
   color: var(--text-medium);
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   border-bottom: 1px solid var(--border-light);
   transition: all 0.3s ease;
 }
@@ -93,20 +95,20 @@
 }
 
 .qualifications li:hover {
-  color: var(--primary-dark);
+  color: var(--text-color);
   transform: translateX(5px);
 }
 
 .qualifications li i {
-  color: var(--accent-gold);
-  font-size: 1.1rem;
+  color: var(--accent-color);
+  font-size: 1.15rem;
   width: 20px;
 }
 
 .philosophy {
-  background: linear-gradient(135deg, var(--primary-dark), var(--primary-blue));
-  color: white;
-  padding: 30px;
+  background: linear-gradient(135deg, var(--accent-color), var(--accent-dark));
+  color: var(--background-color);
+  padding: 45px;
   border-radius: 15px;
   position: relative;
   overflow: hidden;
@@ -119,29 +121,29 @@
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, var(--accent-gold), var(--accent-gold-light));
+  background: linear-gradient(90deg, var(--secondary-color), var(--accent-light));
 }
 
 .philosophy-icon {
   position: absolute;
   top: 20px;
   right: 20px;
-  font-size: 3rem;
-  color: var(--accent-gold);
+  font-size: 3.2rem;
+  color: var(--secondary-color);
   opacity: 0.3;
 }
 
 .philosophy h3 {
-  color: white;
-  font-size: 1.4rem;
-  margin-bottom: 10px;
+  color: var(--background-color);
+  font-size: 1.5rem;
+  margin-bottom: 20px;
   font-weight: 600;
 }
 
 .philosophy p {
   font-style: italic;
-  color: rgba(255, 255, 255, 0.9);
-  font-size: 0.94rem;
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 1.2rem;
   line-height: 1.7;
   margin: 0;
 }
@@ -172,32 +174,32 @@
   position: absolute;
   bottom: 30px;
   right: 30px;
-  background: linear-gradient(135deg, var(--accent-gold), var(--accent-gold-light));
-  color: white;
-  padding: 25px;
+  background: linear-gradient(135deg, var(--secondary-color), var(--accent-light));
+  color: var(--background-color);
+  padding: 28px;
   border-radius: 20px;
   text-align: center;
-  box-shadow: 0 15px 35px rgba(245, 158, 11, 0.4);
-  min-width: 140px;
+  box-shadow: 0 15px 35px var(--shadow-dark);
+  min-width: 150px;
+  border: 2px solid var(--accent-color);
 }
 
 .badge-icon {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   margin-bottom: 10px;
-  display: inline;
+  color: var(--background-color);
 }
 
 .badge-number {
-  font-size: 2.2rem;
+  display: block;
+  font-size: 2.4rem;
   font-weight: 800;
   line-height: 1;
   margin-bottom: 5px;
-  margin-left: 5px;
 }
 
 .badge-text {
-  display: block;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 600;
@@ -213,33 +215,35 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  background: var(--background-light);
-  padding: 15px 20px;
-  border-radius: 10px;
+  background: var(--primary-color);
+  padding: 16px 22px;
+  border-radius: 12px;
   flex: 1;
   text-align: center;
   justify-content: center;
   transition: all 0.3s ease;
+  border: 1px solid var(--border-medium);
 }
 
 .credential-item:hover {
-  background: var(--accent-gold);
-  color: white;
+  background: var(--secondary-color);
+  color: var(--background-color);
   transform: translateY(-3px);
+  box-shadow: 0 8px 25px var(--shadow-medium);
 }
 
 .credential-item i {
-  font-size: 1.2rem;
-  color: var(--accent-gold);
+  font-size: 1.3rem;
+  color: var(--accent-color);
 }
 
 .credential-item:hover i {
-  color: white;
+  color: var(--background-color);
 }
 
 .credential-item span {
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
 }
 
 @media (max-width: 768px) {
@@ -253,23 +257,23 @@
   }
 
   .about-text h2 {
-    font-size: 2.2rem;
+    font-size: 2.4rem;
   }
 
   .about-intro {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 
   .qualifications {
-    padding: 30px 20px;
+    padding: 35px 25px;
   }
 
   .philosophy {
-    padding: 30px 20px;
+    padding: 35px 25px;
   }
 
   .philosophy-icon {
-    font-size: 2rem;
+    font-size: 2.5rem;
     top: 15px;
     right: 15px;
   }
@@ -281,7 +285,7 @@
   .experience-badge {
     bottom: 20px;
     right: 20px;
-    padding: 20px;
-    min-width: 120px;
+    padding: 22px;
+    min-width: 130px;
   }
 }
