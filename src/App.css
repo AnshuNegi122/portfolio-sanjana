@@ -23,6 +23,16 @@
   --shadow-dark: rgba(148, 97, 66, 0.25);
   --overlay-light: rgba(242, 231, 213, 0.9);
   --overlay-medium: rgba(242, 231, 213, 0.95);
+
+  /* Enhanced Gradient Combinations - More Visible and Cool */
+  --gradient-primary: linear-gradient(135deg, #946142 0%, #d9b08c 50%, #f2e7d5 100%);
+  --gradient-secondary: linear-gradient(135deg, #7a4f35 0%, #946142 50%, #b8845f 100%);
+  --gradient-accent: linear-gradient(135deg, #5d3a26 0%, #7a4f35 50%, #946142 100%);
+  --gradient-light: linear-gradient(135deg, #f2e7d5 0%, #e8ddd0 50%, #d9b08c 100%);
+  --gradient-warm: linear-gradient(135deg, #946142 0%, #b8845f 30%, #d9b08c 70%, #f2e7d5 100%);
+  --gradient-hero: linear-gradient(135deg, #7a4f35 0%, #946142 25%, #b8845f 50%, #d9b08c 75%, #f2e7d5 100%);
+  --gradient-cool: linear-gradient(45deg, #946142 0%, #d9b08c 100%);
+  --gradient-reverse: linear-gradient(135deg, #f2e7d5 0%, #d9b08c 30%, #946142 100%);
 }
 
 body {
@@ -64,7 +74,7 @@ body {
 
 .section-header h2 {
   font-family: "Playfair Display", serif;
-  font-size: 3.2rem;
+  font-size: 3rem;
   color: var(--text-color);
   margin-bottom: 20px;
   font-weight: 700;
