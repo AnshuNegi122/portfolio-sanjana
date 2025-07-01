@@ -137,7 +137,7 @@ const Testimonials = () => {
           <h3>Ready to Discuss Your Legal Needs?</h3>
           <p>Schedule a consultation to see how I can help with your case</p>
           <button
-            className="btn btn-primary"
+            className="btn btn-secondary"
             onClick={() => document.getElementById("contact").scrollIntoView({ behavior: "smooth" })}
           >
             <i className="fas fa-calendar-check"></i>

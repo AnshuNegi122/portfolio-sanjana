@@ -3,6 +3,20 @@ import "./Services.css"
 const Services = () => {
   const services = [
     {
+      title: "Corporate Legal Matters",
+      description:
+        "Expert legal solutions for business formation, compliance, mergers, acquisitions, and governance.",
+      icon: "fas fa-building",
+      features: ["Business Formation", "Corporate Compliance", "Mergers & Acquisitions"],
+    },
+    {
+      title: "Matrimonial Matters",
+      description:
+        "Personalized legal assistance for marriage registration, separation agreements, and spousal rights.",
+      icon: "fas fa-ring",
+      features: ["Marriage Registration", "Separation Agreements", "Spousal Support"],
+    },
+    {
       title: "Civil Litigation",
       description:
         "Comprehensive representation in complex civil disputes, contract breaches, and commercial litigation matters.",

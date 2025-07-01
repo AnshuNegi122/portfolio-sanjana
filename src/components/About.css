@@ -1,6 +1,6 @@
 .about {
+  background: var(--background-color);
   padding: 120px 0;
-  background: var(--background-white);
 }
 
 .about-content {
@@ -14,8 +14,8 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: linear-gradient(135deg, var(--accent-gold), var(--accent-gold-light));
-  color: white;
+  background: var(--gradient-secondary);
+  color: var(--background-color);
   padding: 6px 18px;
   border-radius: 50px;
   font-size: 0.9rem;
@@ -23,12 +23,14 @@
   margin-bottom: 15px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  box-shadow: 0 4px 15px var(--shadow-light);
+  border: 1px solid var(--accent-color);
 }
 
 .about-text h2 {
   font-family: "Playfair Display", serif;
   font-size: 3rem;
-  color: var(--primary-dark);
+  color: var(--text-color);
   margin-bottom: 25px;
   font-weight: 700;
   line-height: 1.2;
@@ -36,7 +38,7 @@
 
 .about-intro {
   font-size: 1.3rem;
-  color: var(--accent-gold-dark);
+  color: var(--accent-color);
   font-weight: 600;
   margin-bottom: 20px;
   line-height: 1.6;
@@ -44,31 +46,32 @@
 
 .about-text p {
   font-size: 1.004rem;
-  color: var(--text-medium);
+  color: var(--text-light);
   margin-bottom: 20px;
   line-height: 1.6;
 }
 
 .qualifications {
   margin: 30px 0;
-  background: var(--background-light);
+  background: linear-gradient(135deg, var(--background-color) 0%, var(--primary-color) 100%);
   padding: 25px 40px;
   border-radius: 15px;
-  border-left: 5px solid var(--accent-gold);
+  border-left: 5px solid var(--accent-color);
+  box-shadow: 0 8px 30px var(--shadow-light); 
 }
 
 .qualifications h3 {
   display: flex;
   align-items: center;
   gap: 12px;
-  color: var(--primary-dark);
+  color: var(--text-color);
   font-size: 1.4rem;
   margin-bottom: 10px;
   font-weight: 700;
 }
 
 .qualifications h3 i {
-  color: var(--accent-gold);
+  color: var(--accent-color);
   font-size: 1.3rem;
 }
 
@@ -93,23 +96,24 @@
 }
 
 .qualifications li:hover {
-  color: var(--primary-dark);
+  color: var(--text-color);
   transform: translateX(5px);
 }
 
 .qualifications li i {
-  color: var(--accent-gold);
+  color: var(--accent-color);
   font-size: 1.1rem;
   width: 20px;
 }
 
 .philosophy {
-  background: linear-gradient(135deg, var(--primary-dark), var(--primary-blue));
-  color: white;
+  background: var(--gradient-secondary);
+  color: var(--background-color);
   padding: 30px;
   border-radius: 15px;
   position: relative;
   overflow: hidden;
+  box-shadow: 0 10px 35px var(--shadow-medium);
 }
 
 .philosophy::before {
@@ -119,7 +123,7 @@
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, var(--accent-gold), var(--accent-gold-light));
+  background: var(--gradient-warm);
 }
 
 .philosophy-icon {
@@ -127,12 +131,12 @@
   top: 20px;
   right: 20px;
   font-size: 3rem;
-  color: var(--accent-gold);
+  color: var(--secondary-color);
   opacity: 0.3;
 }
 
 .philosophy h3 {
-  color: white;
+  color: var(--background-color);
   font-size: 1.4rem;
   margin-bottom: 10px;
   font-weight: 600;
@@ -172,22 +176,25 @@
   position: absolute;
   bottom: 30px;
   right: 30px;
-  background: linear-gradient(135deg, var(--accent-gold), var(--accent-gold-light));
-  color: white;
+  background: var(--gradient-secondary);
+  color: var(--background-color);
   padding: 25px;
   border-radius: 20px;
   text-align: center;
-  box-shadow: 0 15px 35px rgba(245, 158, 11, 0.4);
+  box-shadow: 0 15px 35px var(--shadow-dark);
   min-width: 140px;
+  border: 2px solid var(--accent-color);
 }
 
 .badge-icon {
   font-size: 1.5rem;
   margin-bottom: 10px;
+  color: var(--background-color);
   display: inline;
 }
 
 .badge-number {
+  display: block;
   font-size: 2.2rem;
   font-weight: 800;
   line-height: 1;
@@ -213,28 +220,32 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  background: var(--background-light);
+  background: linear-gradient(135deg, var(--background-color) 0%, var(--primary-color) 100%);
   padding: 15px 20px;
   border-radius: 10px;
   flex: 1;
   text-align: center;
   justify-content: center;
   transition: all 0.3s ease;
+  border: 1px solid var(--border-medium);
+  box-shadow: 0 4px 15px var(--shadow-light);
 }
 
 .credential-item:hover {
-  background: var(--accent-gold);
-  color: white;
+  background: var(--gradient-secondary);
+  color: var(--background-color);
   transform: translateY(-3px);
+  box-shadow: 0 8px 25px var(--shadow-medium);
+  border-color: var(--accent-color);
 }
 
 .credential-item i {
   font-size: 1.2rem;
-  color: var(--accent-gold);
+  color: var(--accent-color);
 }
 
 .credential-item:hover i {
-  color: white;
+  color: var(--background-color);
 }
 
 .credential-item span {
