@@ -321,23 +321,6 @@ const Gallery = () => {
             ))}
           </div>
         </div>
-
-        <div className="gallery-footer">
-          <div className="gallery-stats">
-            <div className="stat-item">
-              <i className="fas fa-images"></i>
-              <span>{images.length} Professional Images</span>
-            </div>
-            <div className="stat-item">
-              <i className="fas fa-eye"></i>
-              <span>High Resolution Quality</span>
-            </div>
-            <div className="stat-item">
-              <i className="fas fa-expand-arrows-alt"></i>
-              <span>Interactive Viewing</span>
-            </div>
-          </div>
-        </div>
       </div>
 
       {/* Enhanced Fullscreen Modal with Comprehensive Controls */}
