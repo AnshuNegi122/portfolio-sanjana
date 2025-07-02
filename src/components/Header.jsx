@@ -69,16 +69,16 @@ const Header = () => {
                   <span>Services</span>
                 </a>
               </li>
-              {/* <li>
-                <a href="#experience" onClick={() => scrollToSection("experience")}>
-                  <i className="fas fa-trophy"></i>
-                  <span>Experience</span>
-                </a>
-              </li> */}
               <li>
                 <a href="#testimonials" onClick={() => scrollToSection("testimonials")}>
                   <i className="fas fa-star"></i>
                   <span>Testimonials</span>
+                </a>
+              </li>
+              <li>
+                <a href="#gallery" onClick={() => scrollToSection("gallery")}>
+                  <i className="fas fa-image"></i>
+                  <span>Gallery</span>
                 </a>
               </li>
               <li>
