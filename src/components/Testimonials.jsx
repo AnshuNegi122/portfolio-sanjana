@@ -9,43 +9,43 @@ const Testimonials = () => {
   const testimonials = [
     {
       id: 1,
-      name: "Michael Thompson",
-      position: "CEO, Thompson Enterprises",
+      name: "Rajesh Khanna",
+      position: "Managing Director, Khanna Exports",
       image:
-        "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=256&q=80",
+        "https://upgnorthamerica.com/wp-content/uploads/2023/06/Indian-Hindis-in-Greater-Houston.jpg",
       stars: 5,
-      text: "Sanjana's expertise in corporate law saved our company from a complex legal dispute that could have cost us millions. Her strategic approach and attention to detail were instrumental in achieving a favorable settlement. I cannot recommend her services highly enough.",
-      case: "Corporate Litigation",
+      text: "Sanjana's expertise in corporate law and her strategic insights have been invaluable for Khanna Exports. She handled our complex merger with utmost professionalism and ensured all compliance hurdles were cleared efficiently. Her attention to detail is truly commendable.",
+      case: "Corporate Advisory",
     },
     {
       id: 2,
-      name: "Jennifer Rodriguez",
-      position: "Personal Injury Client",
+      name: "Priya Sharma",
+      position: "Entrepreneur",
       image:
-        "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=256&q=80",
+        "https://upgnorthamerica.com/wp-content/uploads/2023/04/INDIAN-HINDI-IN-NORTH-AMERICA.jpg",
       stars: 5,
-      text: "After my accident, I was overwhelmed with medical bills and insurance claims. Sanjana not only secured a settlement that covered all my expenses but also provided compassionate guidance throughout the entire process. She truly cares about her clients' wellbeing.",
-      case: "Personal Injury",
+      text: "After my unfortunate accident, I was completely lost with the legal procedures. Sanjana took over everything and fought my case with great dedication. The settlement she secured far exceeded my expectations. More importantly, she was always available to answer my concerns.",
+      case: "Personal Injury Claim",
     },
     {
       id: 3,
-      name: "David Wilson",
-      position: "Former Employee at Global Tech",
+      name: "Amit Verma",
+      position: "HR Lead, Tech Spark Solutions",
       image:
-        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=256&q=80",
+        "https://upgnorthamerica.com/wp-content/uploads/2023/04/Indian-Hindi-in-San-Francisco-2.jpg",
       stars: 5,
-      text: "When I faced workplace discrimination, Sanjana fought tirelessly for my rights. Her knowledge of employment law and dedication to justice resulted in not just compensation for me, but also important policy changes at my former workplace. She's a true advocate for workers' rights.",
-      case: "Employment Discrimination",
+      text: "We engaged Sanjana for our company's POSH training and employment contract revisions. Her deep understanding of labor laws and her ability to simplify complex legal terminologies for our employees was impressive. She is now our go-to legal consultant.",
+      case: "Employment Law & POSH",
     },
     {
       id: 4,
-      name: "Rebecca Chen",
-      position: "Family Law Client",
+      name: "Sunita Iyer",
+      position: "Client",
       image:
-        "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=256&q=80",
+        "https://img.freepik.com/free-photo/indian-woman-posing-cute-stylish-outfit-camera-smiling_482257-122351.jpg",
       stars: 5,
-      text: "During my difficult divorce, Sanjana provided not just legal expertise but also emotional support. She protected my interests and helped negotiate a fair settlement while keeping the process as amicable as possible for the sake of our children. I'm forever grateful for her guidance.",
-      case: "Family Law",
+      text: "Navigating through a difficult family dispute was emotionally draining, but Sanjana's compassionate yet firm approach made a world of difference. She protected my rights and guided me through every step of the mediation process. I am extremely grateful.",
+      case: "Family Law & Disputes",
     },
   ]
 

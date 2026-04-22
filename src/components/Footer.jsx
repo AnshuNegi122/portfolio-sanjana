@@ -104,26 +104,20 @@ const Footer = () => {
             <div className="contact-info">
               <p>
                 <i className="fas fa-map-marker-alt"></i>
-                123 Legal Plaza, Suite 500
-                <br />
-                Downtown District, NY 10001
-              </p>
-              <p>
-                <i className="fas fa-map-marker-alt"></i>
                 Hall no 6, Near Court no 8, District & Sessions
                 Court, Gurgaon, HR 122001
               </p>
               <p>
                 <i className="fas fa-phone"></i>
-                (555) 123-4567
+                +91 96505 35768
               </p>
               <p>
                 <i className="fas fa-envelope"></i>
-                Sanjana@Bishtlegal.com
+                advocatesanjanabisht@gmail.com
               </p>
               <p>
                 <i className="fas fa-clock"></i>
-                Mon-Fri: 8AM-6PM
+                Mon-Fri: 8:00 AM - 6:00 PM
               </p>
             </div>
           </div>
