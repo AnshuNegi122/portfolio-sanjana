@@ -14,23 +14,27 @@ const Gallery = () => {
   const [rotation, setRotation] = useState(0)
   const intervalRef = useRef(null)
 
-  // Gallery images 
+  // Sample gallery images with Mondrian layout sizes
   const images = [
     {
-      src: "/images/one.jpg",
-      thumbnail: "/images/one.jpg",
-      title: "Courthouse & Justice",
-      description: "Representing clients in courtrooms with excellence and integrity",
+      src: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+      thumbnail:
+        "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80",
+      title: "Professional Legal Consultation",
+      description: "Modern consultation room designed for client comfort and confidentiality",
       photographer: "Sanjana Bisht",
       location: "Gurgaon, India",
+      size: "large", // Different sizes for Mondrian layout
     },
     {
-      src: "/images/two.jpg",
-      thumbnail: "/images/two.jpg",
+      src: "https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+      thumbnail:
+        "https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80",
       title: "Modern Law Office Interior",
       description: "Contemporary workspace with state-of-the-art facilities",
       photographer: "Legal Studio",
       location: "Delhi, India",
+      size: "medium",
     },
     {
       src: "https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
@@ -40,6 +44,7 @@ const Gallery = () => {
       description: "Comprehensive legal research and documentation services",
       photographer: "Professional Team",
       location: "Law Library",
+      size: "wide",
     },
     {
       src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
@@ -49,6 +54,7 @@ const Gallery = () => {
       description: "Experienced legal professionals dedicated to your success",
       photographer: "Corporate Photography",
       location: "Business District",
+      size: "small",
     },
     {
       src: "https://images.unsplash.com/photo-1556157382-97eda2d62296?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
@@ -58,6 +64,7 @@ const Gallery = () => {
       description: "Representing clients in courtrooms with excellence and integrity",
       photographer: "Justice Photography",
       location: "Supreme Court",
+      size: "tall",
     },
     {
       src: "https://images.unsplash.com/photo-1479142506502-19b3a3b7ff33?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
@@ -67,6 +74,7 @@ const Gallery = () => {
       description: "Extensive legal library with comprehensive research resources",
       photographer: "Academic Team",
       location: "University Library",
+      size: "medium",
     },
     {
       src: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
@@ -76,6 +84,7 @@ const Gallery = () => {
       description: "Collaborative approach to complex legal challenges",
       photographer: "Business Photography",
       location: "Conference Room",
+      size: "wide",
     },
     {
       src: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
@@ -85,6 +94,7 @@ const Gallery = () => {
       description: "Professional contract drafting and legal agreement services",
       photographer: "Legal Documentation",
       location: "Office Suite",
+      size: "small",
     },
     {
       src: "https://images.unsplash.com/photo-1505664194779-8beaceb93744?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
@@ -94,6 +104,7 @@ const Gallery = () => {
       description: "One-on-one legal consultation services",
       photographer: "Client Services",
       location: "Consultation Room",
+      size: "tall",
     },
     {
       src: "https://images.unsplash.com/photo-1577415124269-fc1140a69e91?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
@@ -103,6 +114,7 @@ const Gallery = () => {
       description: "Professional representation in legal proceedings",
       photographer: "Court Photography",
       location: "District Court",
+      size: "medium",
     },
     {
       src: "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
@@ -112,6 +124,7 @@ const Gallery = () => {
       description: "Thorough legal research and case preparation",
       photographer: "Research Team",
       location: "Research Center",
+      size: "large",
     },
     {
       src: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
@@ -121,6 +134,7 @@ const Gallery = () => {
       description: "Modern and professional legal workspace",
       photographer: "Workspace Design",
       location: "Corporate Office",
+      size: "small",
     },
   ]
 
@@ -279,46 +293,69 @@ const Gallery = () => {
             <span>Professional Gallery</span>
           </div>
           <h2>Visual Excellence</h2>
-          <p>Discover our professional environment through a curated collection of high-quality imagery</p>
+          <p>
+            Discover our professional environment through a curated collection presented in modern Mondrian-inspired
+            layout
+          </p>
         </div>
 
-        {/* Enhanced Gallery Grid */}
+        {/* Mondrian Layout Gallery Grid */}
         <div className="gallery-showcase">
-          <div className="gallery-grid">
+          <div className="mondrian-grid">
             {images.map((image, index) => (
               <div
                 key={index}
-                className="gallery-card"
+                className={`mondrian-item mondrian-${image.size}`}
                 onClick={() => openModal(image, index)}
                 style={{ "--delay": `${index * 0.1}s` }}
               >
-                <div className="card-image-container">
-                  <img src={image.src || "/placeholder.svg"} alt={image.title} />
-                  <div className="card-overlay">
-                    <div className="overlay-content">
-                      <div className="card-info">
-                        <h3>{image.title}</h3>
-                        <p>{image.description}</p>
-                        <div className="card-meta">
-                          <span className="photographer">
-                            <i className="fas fa-camera"></i>
-                            {image.photographer}
-                          </span>
-                          <span className="location">
-                            <i className="fas fa-map-marker-alt"></i>
-                            {image.location}
-                          </span>
+                <div className="mondrian-card">
+                  <div className="card-image-container">
+                    <img src={image.src || "/placeholder.svg"} alt={image.title} />
+                    <div className="mondrian-overlay">
+                      <div className="overlay-content">
+                        <div className="card-info">
+                          <h3>{image.title}</h3>
+                          <p>{image.description}</p>
+                          <div className="card-meta">
+                            <span className="photographer">
+                              <i className="fas fa-camera"></i>
+                              {image.photographer}
+                            </span>
+                            <span className="location">
+                              <i className="fas fa-map-marker-alt"></i>
+                              {image.location}
+                            </span>
+                          </div>
                         </div>
-                      </div>
-                      <div className="view-button">
-                        <i className="fas fa-expand"></i>
-                        <span>View Full Size</span>
+                        <div className="view-button">
+                          <i className="fas fa-expand"></i>
+                          <span>View Full Size</span>
+                        </div>
                       </div>
                     </div>
                   </div>
+                  <div className="mondrian-accent"></div>
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+
+        <div className="gallery-footer">
+          <div className="gallery-stats">
+            <div className="stat-item">
+              <i className="fas fa-images"></i>
+              <span>{images.length} Professional Images</span>
+            </div>
+            <div className="stat-item">
+              <i className="fas fa-eye"></i>
+              <span>Mondrian Layout Design</span>
+            </div>
+            <div className="stat-item">
+              <i className="fas fa-expand-arrows-alt"></i>
+              <span>Interactive Viewing</span>
+            </div>
           </div>
         </div>
       </div>

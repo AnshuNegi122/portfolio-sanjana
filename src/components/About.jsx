@@ -59,7 +59,7 @@ const About = () => {
               </ul>
             </div>
 
-            <div className="philosophy">
+            {/* <div className="philosophy">
               <div className="philosophy-icon">
                 <i className="fas fa-quote-left"></i>
               </div>
@@ -69,13 +69,13 @@ const About = () => {
                 to client success. Every case deserves thorough research, innovative solutions, and dedicated advocacy
                 to ensure the best possible outcomes.
               </p>
-            </div>
+            </div> */}
           </div>
 
           <div className="about-image">
             <div className="image-container">
               <img
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                src="/images/main.jpeg"
                 alt="Sanjana Bisht in her office"
               />
               <div className="experience-badge">
